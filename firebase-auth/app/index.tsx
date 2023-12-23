@@ -17,7 +17,6 @@ const SignupForm = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [theme, setTheme] = useState(Appearance.getColorScheme());
-
     useEffect(() => {
         const subscription = Appearance.addChangeListener(({ colorScheme }) => {
             setTheme(colorScheme);
